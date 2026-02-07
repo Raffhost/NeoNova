@@ -2,9 +2,9 @@ import tkinter as tk
 
 WINDOW_WIDTH = 600
 WINDOW_HEIGHT = 800
-BLOCK_HEIGHT = 25
-BLOCK_WIDTH = 75
-BLOCK_SPEED = 25
+BLOCK_HEIGHT = 50
+BLOCK_WIDTH = 150
+BLOCK_SPEED = 50
 BG_COLOR = "#000000"
 BLOCK_COLOR = "#FFFFFF"
 
@@ -12,11 +12,10 @@ window = tk.Tk()
 window.title("Beta")
 window.resizable(False, False)
 
-block_x = 0
+block_x = WINDOW_WIDTH // 2 - BLOCK_WIDTH // 2
 block_y = WINDOW_HEIGHT - BLOCK_HEIGHT
 block_direction = 1
 last_block = None
-
 
 
 def create_block():
@@ -56,7 +55,7 @@ def place(event):
             BLOCK_WIDTH -= (block_x + BLOCK_WIDTH)- last_block_coords[2]
             
     last_block = create_block()
-    block_x = 0
+    block_x = WINDOW_WIDTH//2
     block_y -= BLOCK_HEIGHT
 
 window.bind("<space>", place)
