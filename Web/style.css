@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(rgb(0, 0, 79), rgb(9, 0, 2));
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.all {
+    align-items: center;
+    
+}
+.header {
+    width: 600px;
+    display: block;
+    justify-content: center;
+    gap: 15px;  
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+
+    color: blueviolet;
+
+    text-shadow:
+        0 0 30px rgba(115, 0, 255, 0.8),
+        6px -4px 0 #2d0e49;
+    
+}
+ 
+
+
+
+
+
+
+.main {
+    text-align: center;
+    margin: 150px 0;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.nav input {
+    padding: 15px 50px 15px 20px; /* оставляем место для стрелки */
+    font-size: 24px;
+    color: #ffffff;
+    background: rgba(20, 20, 20, 0.8);
+    border: 2px solid #ae00ff;
+    border-radius: 15px;
+    outline: none;
+    letter-spacing: 2px;
+
+    /* неоновая подсветка при фокусе */
+    transition: all 0.3s ease;
+}
+
+.nav input::placeholder {
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.nav input:focus {
+    border-color: #ff00cc;
+    box-shadow: 0 0 10px #ae00ff, 0 0 20px #ff00cc;
+}
+
+.nav .arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: #ff00cc;
+    pointer-events: none; /* чтобы не мешала клику */
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+}
+
+
+.play-btn {
+    padding: 12px 40px;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00f7ff;
+    background: transparent;
+    border: 2px solid #00f7ff;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.play-btn:hover {
+    color: #ff00cc;
+    border-color: #ff00cc;
+    box-shadow:
+        0 0 10px #ff00cc,
+        0 0 20px #00f7ff,
+        0 0 30px #ff00cc;
+}
