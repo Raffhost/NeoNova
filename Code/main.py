@@ -73,7 +73,7 @@ def game_over():
     canvas.create_text(
         WINDOW_WIDTH/2, WINDOW_HEIGHT/2 - 50, 
         text="Game Over", 
-        fill="red", 
+        fill="#ae00ff", 
         font=("Arial", 30),
         tags="game_over_text"
     )
@@ -88,7 +88,7 @@ def victory():
     canvas.create_text(
         WINDOW_WIDTH/2, WINDOW_HEIGHT/2 - 50, 
         text="Victory!", 
-        fill="green", 
+        fill="#ff00cc", 
         font=("Arial", 30),
         tags="victory_text"
     )
@@ -106,9 +106,9 @@ def show_restart_buttons():
     
     # Create buttons
     yes_button = tk.Button(window, text="Yes", command=reset_game, 
-                       bg="green", fg="white", font=("Arial", 14))
+                       bg="#ae00ff", fg="white", font=("Arial", 14))
     no_button = tk.Button(window, text="No", command=window.destroy,
-                      bg="red", fg="white", font=("Arial", 14))
+                      bg="darkgrey", fg="white", font=("Arial", 14))
     
     # Place buttons on canvas
     canvas.create_window(WINDOW_WIDTH/2 - 50, WINDOW_HEIGHT/2 + 70, 
