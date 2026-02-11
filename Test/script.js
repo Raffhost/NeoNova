@@ -5,7 +5,7 @@ const BLOCK_HEIGHT = 50;
 const INITIAL_BLOCK_WIDTH = 150;
 const BLOCK_SPEED = 50;
 const BG_COLOR = "#000000";
-const BLOCK_COLOR = "#FFFFFF";
+const BLOCK_COLOR = "rgb(0, 0, 79)";
 
 // Get canvas and context
 const canvas = document.getElementById('canvas');
@@ -85,7 +85,7 @@ function game_over() {
     speed = 0;
     
     // Game over text
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#6d6d6d";
     ctx.font = "30px Arial";
     ctx.textAlign = "center";
     ctx.fillText("Game Over", WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 50);
@@ -98,7 +98,7 @@ function victory() {
     speed = 0;
     
     // Victory text
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "#ae00ff";
     ctx.font = "30px Arial";
     ctx.textAlign = "center";
     ctx.fillText("Victory!", WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 50);
@@ -119,7 +119,7 @@ function show_restart_buttons() {
     
     const yesButton = document.createElement('button');
     yesButton.textContent = 'Yes';
-    yesButton.style.backgroundColor = 'green';
+    yesButton.style.backgroundColor = '#ae00ff';
     yesButton.style.color = 'white';
     yesButton.style.fontSize = '14px';
     yesButton.style.padding = '10px 20px';
@@ -129,13 +129,15 @@ function show_restart_buttons() {
     
     const noButton = document.createElement('button');
     noButton.textContent = 'No';
-    noButton.style.backgroundColor = 'red';
+    noButton.style.backgroundColor = '#6d6d6d';
     noButton.style.color = 'white';
     noButton.style.fontSize = '14px';
     noButton.style.padding = '10px 20px';
     noButton.style.margin = '5px';
     noButton.style.cursor = 'pointer';
-    noButton.onclick = () => window.close();
+    noButton.onclick = () => {
+        window.location.href = "index.html";
+    };
     
     buttonContainer.appendChild(yesButton);
     buttonContainer.appendChild(noButton);

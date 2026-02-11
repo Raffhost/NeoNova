@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(0, 0, 79), rgb(9, 0, 2));
+
+}
+
+canvas {
+    border: 2px solid white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+
+.game-screen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Контейнер кнопок */
+#buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Общий стиль кнопок */
+#buttonContainer button {
+    font-family: 'Orbitron', sans-serif;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ae00ff;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+/* Hover эффект */
+#buttonContainer button:hover {
+    background: #ae00ff;
+    box-shadow: 0 0 10px #ae00ff,
+                0 0 20px #ff00cc,
+                0 0 40px #ae00ff;
+    transform: scale(1.05);
+}
+
+/* Кнопка YES */
+#buttonContainer button:first-child {
+    border-color: #ae00ff;
+    color: #ae00ff;
+}
+
+#buttonContainer button:first-child:hover {
+    background: #ae00ff;
+    color: black;
+    box-shadow: 0 0 10px #ae00ff,
+                0 0 20px #ae00ff;
+}
+
+/* Кнопка NO */
+#buttonContainer button:last-child {
+    border-color: #6d6d6d;
+    color: #6d6d6d;
+}
+
+#buttonContainer button:last-child:hover {
+    background: #6d6d6d;
+    color: black;
+    box-shadow: 0 0 10px #6d6d6d,
+                0 0 20px #6d6d6d;
+}

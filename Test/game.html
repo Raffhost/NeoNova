@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>NeoNova Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
+    <div class="game-container">
+        <div class="game-screen">
+            <!-- Canvas -->
+            <canvas id="canvas" width="400" height="600"></canvas>
+            <!-- Контейнер для кнопок -->
+            <div id="buttonContainer" style="display:none; text-align:center; margin-top:10px;"></div>
 
-    <h1>NeoNova</h1>
+            <!-- Подключение скрипта В САМОМ КОНЦЕ -->
+            <script src="script.js"></script>
+        </div>
+    </div>
 
-    <!-- Canvas -->
-    <canvas id="canvas" width="400" height="600"></canvas>
+    
 
-    <!-- Контейнер для кнопок -->
-    <div id="buttonContainer" style="display:none; text-align:center; margin-top:10px;"></div>
+    
 
-    <!-- Подключение скрипта В САМОМ КОНЦЕ -->
-    <script src="script.js"></script>
 
 </body>
 </html>
