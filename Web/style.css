@@ -1,21 +1,22 @@
 html, body {
-    height: 100%;
     margin: 0;
+    padding: 0;
 }
-
-
 
 body {
     background: linear-gradient(rgb(0, 0, 79), rgb(9, 0, 2));
     font-family: 'Arial', sans-serif;
-    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
-.all {
-    align-items: center;
-    
 }
 
 .title {
@@ -25,20 +26,18 @@ body {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     letter-spacing: 5px;
-
+    margin-bottom: 20px;
     color: blueviolet;
-
     text-shadow:
         0 0 30px rgba(115, 0, 255, 0.8),
         6px -4px 0 #2d0e49;
-    
 }
 
 .info {
     font-size: 30px;
     color: #565656;
     text-shadow: 0 0 10px #000000, 0 0 20px #ffffff;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     letter-spacing: 5px;
@@ -48,13 +47,9 @@ ul {
   list-style: none;
 }
 
-
-
 a {
   display: inline-block;
 }
-
-
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -74,10 +69,11 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   margin: 0 auto;
 }
+
 .header__content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* лого слева, header__end справа */
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -86,6 +82,7 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 73px;
   display: flex;
 }
+
 .header__logo img {
   height: 50px;
   width: 50px;
@@ -95,6 +92,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   margin-left: 10px;
 }
+
 .header__logo img:hover {
   box-shadow: 0 0 10px #ae00ff, 0 0 20px #ff00cc;
 }
@@ -104,38 +102,33 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 25px;
   display: flex;
   margin-right: 20px;
-  
 }
+
 .header__socials ul {
   gap: 35px;
   display: flex;
 }
+
 .header__socials ul a {
   font-size: 18px;
 }
+
 .header__socials ul a:hover {
   box-shadow: 0 0 10px #000000, 0 0 20px #000000;
 }
- 
-
-
-
-
-
 
 .main {
     text-align: center;
-    margin: 50px 0;
 }
 
 .nav {
     position: relative;
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .nav input {
-    padding: 15px 50px 15px 20px; /* оставляем место для стрелки */
+    padding: 15px 50px 15px 20px;
     font-size: 24px;
     color: #ffffff;
     background: rgba(20, 20, 20, 0.8);
@@ -143,8 +136,6 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 15px;
     outline: none;
     letter-spacing: 2px;
-
-    /* неоновая подсветка при фокусе */
     transition: all 0.3s ease;
 }
 
@@ -165,10 +156,9 @@ h1, h2, h3, h4, h5, h6, p {
     transform: translateY(-50%);
     font-size: 28px;
     color: #ff00cc;
-    pointer-events: none; /* чтобы не мешала клику */
+    pointer-events: none;
     text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
 }
-
 
 .play-btn {
     padding: 12px 40px;
@@ -194,13 +184,10 @@ h1, h2, h3, h4, h5, h6, p {
         0 0 30px #ff00cc;
 }
 
-
 footer {
     text-align: center;
     padding: 20px 0;
     color: #8b8a8a31;
     border-radius: 50px;
-    margin-top: 90px;
-    
-
+    margin-top: auto;
 }
