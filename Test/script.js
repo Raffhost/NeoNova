@@ -86,7 +86,7 @@ function game_over() {
     
     // Game over text
     ctx.fillStyle = "#6d6d6d";
-    ctx.font = "30px Arial";
+    ctx.font = "bold 40px Orbitron";
     ctx.textAlign = "center";
     ctx.fillText("Game Over", WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 50);
     
@@ -99,7 +99,7 @@ function victory() {
     
     // Victory text
     ctx.fillStyle = "#ae00ff";
-    ctx.font = "30px Arial";
+    ctx.font = "bold 40px Orbitron";
     ctx.textAlign = "center";
     ctx.fillText("Victory!", WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 - 50);
     
@@ -109,7 +109,7 @@ function victory() {
 function show_restart_buttons() {
     // Play again text
     ctx.fillStyle = "white";
-    ctx.font = "16px Arial";
+    ctx.font = "bold 20px Orbitron";
     ctx.textAlign = "center";
     ctx.fillText("Play again?", WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2 + 20);
     

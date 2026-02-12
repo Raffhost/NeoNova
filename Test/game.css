@@ -4,11 +4,36 @@ body {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(rgb(0, 0, 79), rgb(9, 0, 2));
+}
 
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(183, 0, 255, 0.053),
+        rgba(183, 0, 255, 0.053) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+}
+
+#victory {
+    font-family: 'Orbitron', sans-serif;
 }
 
 canvas {
-    border: 2px solid white;
+    border: 4px solid #28003b;
+    box-shadow:
+        0 0 10px #28003b,
+        0 0 20px #ff00ff,
+        0 0 40px #28003b;
+    margin-top: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
