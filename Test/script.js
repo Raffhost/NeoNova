@@ -3,7 +3,7 @@ const WINDOW_WIDTH = 400;
 const WINDOW_HEIGHT = 600;
 const BLOCK_HEIGHT = 50;
 const INITIAL_BLOCK_WIDTH = 150;
-const BLOCK_SPEED = 50;
+const BLOCK_SPEED = 50; // Pixels per second
 const BG_COLOR = "#000000";
 const BLOCK_COLOR = "rgb(0, 0, 79)";
 
